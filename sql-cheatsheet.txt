@@ -17,11 +17,11 @@ One or many tables build the database.
 
 
 
-SELECT c1, c2 FROM table 1
+SELECT c1, c2 FROM table_1
 Select column c1, c2 and all rows from table_1
 
 SELECT * FROM table_1
 Select all rows and columns from table_1
 
-
-
+SELECT DISTINCT c1 from table_1
+Select distinct rows by columns c1 from table_1
