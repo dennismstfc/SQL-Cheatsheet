@@ -1,7 +1,7 @@
 Concept:		
 One or many tables build the database.
 
-		Database
+		       Database
 |------------------------------------------------------|
 |      table_1          table_2		   table_3     |
 | |--------------|  |--------------|  |--------------| |
@@ -16,12 +16,41 @@ One or many tables build the database.
 |------------------------------------------------------| 
 
 
-
 SELECT c1, c2 FROM table_1
-Select column c1, c2 and all rows from table_1
+Select columns c1, c2 and all rows from table_1
 
 SELECT * FROM table_1
 Select all rows and columns from table_1
 
 SELECT DISTINCT c1 from table_1
 Select distinct rows by columns c1 from table_1
+
+SELECT COUNT(*) FROM table_1
+Indiciates the number of rows in table_1
+
+SELECT COUNT(DISTINCT c1) FROM table_1
+Indicates the number of distinct elements of column c1 from table_1
+
+SELECT * FROM table_1 WHERE c1 = 'x'
+Select all columns and rows where the value of c1 equals x
+
+SELECT * FROM table_1 WHERE c2 > 20
+Select all columns and rows where the value of c2 is greater than 20
+
+SELECT * FROM table_1 WHERE c1 = 'x' AND c2 > 20
+Select all columns and rows where the value of c1 equals x and the value of c2 is greather than 20
+
+SELECT * FROM table_1 ORDER BY c2 ASC
+Selects all rows and columns from table_2 and sorts it in ascending order
+
+SELECT * FROM table_1 ORDER BY c2 DESC
+Selects all rows and columns from table_2 and sorts it in descending order
+
+SELECT * FROM table_1 ORDER BY c2 ASC LIMIT 2
+Selects two rows and all columns from table_2 and sorts it in ascending order
+
+SELECT * FROM table_1 WHERE c2 BETWEEN 15 AND 50
+Selects all rows and columns with amounts between 15 and 50 from table_1
+
+SELECT * FROM table_1 WHERE c2 BETWEEN 15 AND 50
+Selects all rows and columns with amounts that are not between 15 and 50 from table_1
