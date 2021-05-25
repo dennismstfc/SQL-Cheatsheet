@@ -54,3 +54,10 @@ Selects all rows and columns with amounts between 15 and 50 from table_1
 
 SELECT * FROM table_1 WHERE c2 BETWEEN 15 AND 50
 Selects all rows and columns with amounts that are not between 15 and 50 from table_1
+
+SELECT COUNT(*) FROM table_1 WHERE c1 LIKE 'P%'
+Indicates the number of rows that starts with a P
+
+SELECT COUNT(*) FROM table_1 WHERE c1 LIKE '%p'
+Indicates the number of rows that ends with a P
+
